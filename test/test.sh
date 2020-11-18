@@ -9,7 +9,7 @@ echo -e "\n $ANSI_YELLOW *** testing docker run - kafka *** $ANSI_RESET \n"
 echo -e "$ANSI_YELLOW feed/read output from consumer: $ANSI_RESET"
 
 docker run --name apache_kafka -p 2081:2081 -p 9092:9092 -d quay.io/ibmz/kafka:2.5
-sleep 10
+sleep 1m
 
 docker exec apache_kafka bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic simple-test-topic
 sleep 2
