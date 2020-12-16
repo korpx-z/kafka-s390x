@@ -6,7 +6,7 @@ env:
     - TEST_DIR="$PWD/test/"
     - TEST_SCRIPT="test.sh"
     - BUILD_DIR="$PWD/2.5/"
-    - REPO="quay.io/ibmz/kafka"
+    - REPO="quay.io/ibm/kafka"
     - TAG="$REPO:2.5"
 before_script: 
   - cd $BUILD_DIR && chmod +x *
