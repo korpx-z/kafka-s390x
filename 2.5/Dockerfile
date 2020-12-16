@@ -1,4 +1,4 @@
-FROM quay.io/ibmz/ubuntu:20.04
+FROM quay.io/ibm/ubuntu:20.04
 
 # The author
 LABEL maintainer="LoZ Open Source Ecosystem (https://www.ibm.com/community/z/usergroups/opensource)"
